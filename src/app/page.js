@@ -3,11 +3,18 @@ import './css/index.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
+
 function page() {
   return (
    <>
-       <Navbar></Navbar>
-     <section className="hero" style={{marginTop: '1rem'}}>
+
+
+   
+
+     <Navbar></Navbar>
+   
+      
+     <section className="hero" style={{marginTop: '7em'}}>
       <div className="container">
         <div className="hero-copy">
           <h1>Empower Your Digital  <br />Defense. Now.</h1>
