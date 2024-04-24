@@ -62,17 +62,19 @@ function Page({params}) {
           <h2>Our Services</h2>
           
      
-      <div className="blog-tags">
-      {tagsData.map((tag, index) => (
-      <Link href={`${tag}`}> <div
-          className={currentSlug===tag ? 'tagf' : 'tag'}
-          key={index}
-          
-        >
-          <p>{tag}</p>
-        </div></Link> 
-      ))}
-    </div>
+     
+      <div className="blog-tags blog-tags-container">
+        {tagsData.map((tag, index) => (
+          <Link href={`${tag}`} key={index}>
+            <div
+              className={currentSlug === tag ? 'tagf' : 'tag'}
+            >
+              <p>{tag}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
+   
 
 
 
