@@ -71,13 +71,24 @@
 .blog-tags {
   display: flex;
   gap: 0.5em;
-  margin: 4em 0 2em 0;
+  margin: 0 0 2em 0;
 }
 
 .tag {
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 4px 12px;
   border-radius: 20px;
+}
+
+.tagf
+{
+    border: 1px solid black;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.tagf p{
+  color: black;
 }
 
 .tag p {
@@ -97,6 +108,7 @@
 .blog-img {
   position: relative;
   height: 250px;
+  max-width: 20rem;
   border-radius: 20px;
   overflow: hidden;
 }
