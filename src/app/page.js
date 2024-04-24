@@ -9,7 +9,7 @@ function page() {
      <section className="hero" style={{marginTop: '2rem'}}>
       <div className="container">
         <div className="hero-copy">
-          <h1>Empower Your Digital <br />Defense. Now.</h1>
+          <h1>Empower Your Digital Service <br />Defense. Now.</h1>
           <p>
             Byteforge is a solution designed for businesses aiming to maintain
             their confidential information securely encrypted at all moments.
