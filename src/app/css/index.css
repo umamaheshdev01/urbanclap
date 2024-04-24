@@ -262,9 +262,17 @@ section.cta-1 .container {
   margin-top: 2em;
 }
 
+.puran {
+  margin-top: 7em;
+}
+
 @media (max-width: 900px) {
   .hero-copy p {
     width: 75%;
+  }
+
+  .puran{
+    margin-top: 0.2em;
   }
 
   .hero-img {
