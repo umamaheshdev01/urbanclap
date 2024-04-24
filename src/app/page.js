@@ -7,7 +7,7 @@ function page() {
   return (
    <>
        <Navbar></Navbar>
-     <section className="hero" style={{marginTop: '0.6rem'}}>
+     <section className="hero" style={{marginTop: '1rem'}}>
       <div className="container">
         <div className="hero-copy">
           <h1>Empower Your Digital  <br />Defense. Now.</h1>
