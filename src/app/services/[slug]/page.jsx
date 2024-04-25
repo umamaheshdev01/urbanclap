@@ -36,7 +36,7 @@ function Page({params}) {
         
         const list  = []
 
-        data.forEach(element => {
+        data?.forEach(element => {
 
           list.push(element.name)
           
@@ -65,7 +65,7 @@ function Page({params}) {
         
          const list2 = []
 
-         data.forEach((ele)=>{
+         data?.forEach((ele)=>{
              if(ele.Servicetype.name === currentSlug)
              {
                  list2.push(ele)
