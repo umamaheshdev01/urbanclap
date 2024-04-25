@@ -1,58 +1,112 @@
-import React from 'react';
+'use client'
+import React, { useEffect, useState } from 'react';
 import Navbar from '../../components/Navbar'
 import '../../css/blog.css'
 import BlogComponent from '../../components/BlogComponent';
 import Link from 'next/link';
 
 
-const tagsData = ['Compliance', 'Encryption', 'News', 'Highlights', 'Security'];
+import { createClient } from '@supabase/supabase-js'
+const supabaseUrl = 'https://xnpbgshwasrramtvbzgx.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhucGJnc2h3YXNycmFtdHZiemd4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTM5Nzk0MjEsImV4cCI6MjAyOTU1NTQyMX0.SLMupGKcXFpA9HXG_xgzLfgDHTqEKNUu77XBbHaNrds'
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 
-
-
-const blogsData = [
-  {
-    imageUrl:
-      'https://assets.website-files.com/64bec233ea9c3e4f5dda1080/64c2fd903b98e1ea07b956ce_456%20x%20288%20(x2).png',
-    altText: 'Automatic Failover Importance',
-    category: 'Technology',
-    author: 'Ryan Hausar',
-    title: 'The Essentials of Automatic Failover',
-    link: './sample-blog.html',
-  },
-  {
-    imageUrl:
-      'https://assets.website-files.com/64bec233ea9c3e4f5dda1080/64c300012dbd6912c693d224_456%20x%20288%20(x2).png',
-    altText: 'Cloud Security Best Practices',
-    category: 'Security',
-    author: 'Emily Turner',
-    title: 'Cloud Security Best Practices',
-    link: './sample-blog.html',
-  },
-  {
-    imageUrl:
-      'https://assets.website-files.com/64bec233ea9c3e4f5dda1080/64c2fd903b98e1ea07b956ce_456%20x%20288%20(x2).png',
-    altText: 'Innovations in Encryption',
-    category: 'Innovation',
-    author: 'Marcus Lee',
-    title: 'Innovations in Encryption Technology',
-    link: './sample-blog.html',
-  },
-  {
-    imageUrl:
-      'https://assets.website-files.com/64bec233ea9c3e4f5dda1080/64c2fd903b98e1ea07b956ce_456%20x%20288%20(x2).png',
-    altText: 'Fourth Blog',
-    category: 'Category',
-    author: 'Author',
-    title: 'Fourth Blog Title',
-    link: './sample-blog.html',
-  },
-];
 
 
 function Page({params}) {
 
- const currentSlug = params.slug
+  const currentSlug = params.slug
+
+  const [tagsData,setTag] = useState([])
+  const [blogsData,setBlog] = useState([])
+
+
+  useEffect(()=>{
+
+    
+
+
+    const fetchrey = async()=>{
+
+
+
+
+      await supabase.from('Servicetype').select('*').then(({data})=>{
+        
+        const list  = []
+
+        data.forEach(element => {
+
+          list.push(element.name)
+          
+        });
+
+     
+
+        setTag(list)
+
+      })
+    
+    }
+
+    fetchrey()
+
+   
+
+  },[])
+
+
+  useEffect(()=>{
+   
+    const fukk = async ()=>{
+
+      await supabase.from('services').select('*,Servicetype(*),Users(*)').then(({data})=>{
+        
+         const list2 = []
+
+         data.forEach((ele)=>{
+             if(ele.Servicetype.name === currentSlug)
+             {
+                 list2.push(ele)
+             }
+         })
+
+         console.log(list2)
+
+         const list4 = []
+
+         list2.forEach((ele)=>{
+            
+          list4.push({
+            imageUrl: ele.servicepicture,
+    altText: capitalizeFirstLetter(ele.servicename),
+    category: capitalizeFirstLetter(ele.Servicetype.name),
+    author: capitalizeFirstLetter(ele.Users.username) ,
+    title: capitalizeFirstLetter(ele.servicename),
+    link: '/serve',
+
+          })
+
+
+          setBlog(list4)
+
+         })
+
+      })
+
+    }
+
+    fukk()
+
+  },[])
+
+
+   function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+ 
   return (
     <>
       <Navbar />
@@ -69,7 +123,7 @@ function Page({params}) {
             <div
               className={currentSlug === tag ? 'tagf' : 'tag'}
             >
-              <p>{tag}</p>
+              <p>{capitalizeFirstLetter(tag)}</p>
             </div>
           </Link>
         ))}
