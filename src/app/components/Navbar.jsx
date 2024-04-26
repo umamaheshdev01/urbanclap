@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="container">
         <div className="navbar-logo">
-          <Link href="/"><i className="ph-fill ph-brain"></i></Link>
+          <Link href="/"><img  style={{height : '2.5rem' , width : '2.5rem'}} src='https://xnpbgshwasrramtvbzgx.supabase.co/storage/v1/object/public/servicepics/logo.png'></img></Link>
         </div>
         <div className="navbar-items">
           <input type="checkbox" id="hamburger-toggle" />

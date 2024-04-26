@@ -34,35 +34,14 @@ function page() {
 
       <section class="clients">
       <div class="container">
-        <p>
-          Organizations around the globe rely on Byteforge to ensure their
-          databases are protected and meet regulatory standards.
+        <p style={{fontSize : '2rem'}}>
+          Partner with us.
         </p>
         <div class="client-logos">
-          <img
-            src="https://assets.website-files.com/64b936c88eb5ddace1f89459/64b9b7e261f238326c629447_braintech.svg"
-            alt=""
+          <img style={{height : '10rem', width : '15rem'}}
+           src='https://xnpbgshwasrramtvbzgx.supabase.co/storage/v1/object/public/servicepics/home.jpg?t=2024-04-26T17%3A23%3A03.234Z'
           />
-          <img
-            src="https://assets.website-files.com/64b936c88eb5ddace1f89459/64b9b81bcb329e5162eb7e55_IDNN.svg"
-            alt=""
-          />
-          <img
-            src="https://assets.website-files.com/64b936c88eb5ddace1f89459/64b9b826aec053d895d6412d_onebit.svg"
-            alt=""
-          />
-          <img
-            src="https://assets.website-files.com/64b936c88eb5ddace1f89459/64b9b83083368fc53b21eec8_BeSound.svg"
-            alt=""
-          />
-          <img
-            src="https://assets.website-files.com/64b936c88eb5ddace1f89459/64b9b83b0d8e975855361f5d_MAKEO.svg"
-            alt=""
-          />
-          <img
-            src="https://assets.website-files.com/64b936c88eb5ddace1f89459/64b9b846553ad5cddda2c10c_Doobank.svg"
-            alt=""
-          />
+         
         </div>
       </div>
     </section>
@@ -72,17 +51,15 @@ function page() {
       <section class="cta-1">
       <div class="container">
         <div class="col">
-          <p id="callout">API Surveillance</p>
+          <p id="callout">New Services</p>
           <h2>Develop and <br />work together.</h2>
           <p class="copy">
-            Employ any Continuous Integration platform to work in tandem with
-            your team on writing, testing, and implementing end-to-end browser
-            and API tests.
+            Transform your home with our comphrensive range of professional home services.
           </p>
-          <button><a href="#">Get a Demo</a></button>
+         <Link href='/services/carpenter'><button>Explore</button></Link>   
         </div>
         <div class="col">
-          <img src="./assets/cta-1.png" alt="" />
+          <img style={{ borderRadius : '5%' }} src="https://xnpbgshwasrramtvbzgx.supabase.co/storage/v1/object/public/servicepics/new.jpg?t=2024-04-26T17%3A27%3A54.708Z" alt="" />
         </div>
       </div>
     </section>
@@ -91,112 +68,125 @@ function page() {
 
 
     <section class="why-pro">
+      
       <div class="container">
-        <h2>Why Byteforge</h2>
+        <h2>ServiceXpress</h2>
         <p class="copy">
-          We construct, oversee, and integrate security protocols into our
-          platform, sparing you the effort. Byteforge is designed with security
-          as a fundamental feature.
+         Transform your home with our comphrensive range of professional home services.
         </p>
 
         <div class="divider"></div>
 
         <div class="benefits">
           <div class="col">
+            <Link href='/services/electrician'>
             <div class="benefit">
-              <h3><i class="ph-fill ph-atom"></i> Effortless Alignment</h3>
+              <h3><i class="ph-fill ph-lightning"></i> Electrician</h3>
               <p>
-                Byteforge assists organizations in adopting security measures
-                mandated by compliance frameworks and legal requirements,
-                including CPRA, GDPR, PCI DSS, and SOC 2.
+                Powerup your life with reliable electricity service from keeping your home lit to charging your devices.
               </p>
             </div>
+            </Link>
 
+
+
+          <Link href='/services/plumber'>
             <div class="benefit">
               <h3>
-                <i class="ph-fill ph-bug-droid"></i> Comprehensive Security
+                <i class="ph-fill ph-drop-half-bottom"></i> Plumbing
               </h3>
               <p>
-                Byteforge enables entities to enforce security mandates
-                essential for adherence to compliance standards and regulatory
-                obligations such as CPRA, GDPR, PCI DSS, and SOC 2.
+               Need a reliable plumber ? Look no further ! Our team is here to tackle all your plumbing needs with expertise and efficiency.
               </p>
             </div>
+            </Link>
 
+         <Link href='/services/carpenter'>
             <div class="benefit">
-              <h3><i class="ph-fill ph-database"></i> Data Enclaves</h3>
+              <h3><i class="ph-fill ph-hammer"></i> Carpenter</h3>
               <p>
-                Byteforge aids firms in establishing security protocols
-                requisite for compliance with regulatory frameworks and statutes
-                like CPRA, GDPR, PCI DSS, and SOC 2.
+                Need a reliable carpenter ? Look no further ! Our team is here to tackle all your carpentery needs with expertise and efficiency. 
               </p>
             </div>
+         </Link>
           </div>
 
           <div class="col">
+
+            <Link href='/services/cleaning'>
             <div class="benefit">
               <h3>
-                <i class="ph-fill ph-codesandbox-logo"></i> Unparalleled Speed
+                <i class="ph-fill ph-spray-bottle"></i> Cleaning Services
               </h3>
               <p>
-                Byteforge supports businesses in implementing necessary security
-                controls for compliance with standards and laws such as CPRA,
-                GDPR, PCI DSS, and SOC 2.
+                  Need a reliable maid ? Look no further ! Our team is here to tackle all your cleaning needs with expertise and efficiency. 
               </p>
             </div>
+            </Link>
 
-            <div class="benefit">
-              <h3><i class="ph-fill ph-disc"></i> Advanced Filtering</h3>
-              <p>
-                Byteforge provides assistance to companies in deploying security
-                measures required for compliance with regulations and frameworks
-                like CPRA, GDPR, PCI DSS, and SOC 2.
-              </p>
-            </div>
 
+         <Link href='/services/tutor'>
             <div class="benefit">
-              <h3><i class="ph-fill ph-git-diff"></i> Egress Filtering</h3>
+              <h3><i class="ph-fill ph-book"></i> Tutor</h3>
               <p>
-                Byteforge helps organizations to enforce security requirements
-                necessary for conformance to compliance schemes and regulatory
-                laws such as CPRA, GDPR, PCI DSS, and SOC 2.
+                 Need a reliable tutor ? Look no further ! Our team is here to tackle all your doubts needs with expertise and efficiency. 
               </p>
             </div>
+            </Link>
+
+
+
+         <Link href='/services/painter'>
+            <div class="benefit">
+              <h3><i class="ph-fill ph-paint-roller"></i> Painter</h3>
+              <p>
+                  Need a reliable painter ? Look no further ! Our team is here to tackle all your painting needs with expertise and efficiency. 
+              </p>
+            </div>
+          </Link>
           </div>
+        
 
           <div class="col">
-            <div class="benefit">
-              <h3>
-                <i class="ph-fill ph-github-logo"></i> Dependable Infrastructure
-              </h3>
-              <p>
-                Byteforge aids in equipping companies with security controls
-                imperative for compliance to regulatory frameworks and
-                legislations like CPRA, GDPR, PCI DSS, and SOC 2.
-              </p>
-            </div>
 
-            <div class="benefit">
+            <Link href='/services/carwash'>
+                     <div class="benefit">
               <h3>
-                <i class="ph-fill ph-puzzle-piece"></i> Intelligent Device
+                <i class="ph-fill ph-car"></i> Car wash
               </h3>
               <p>
-                Byteforge assists in the implementation of security measures
-                critical for adherence to compliance protocols and legal
-                statutes such as CPRA, GDPR, PCI DSS, and SOC 2.
+                Want your ride to sparkle like new? Our professional car wash service is here to make it happen! Drop by or book your appointment now for that showroom shine! 
               </p>
             </div>
+            </Link>
+     
 
-            <div class="benefit">
+          <Link href='/services/babysitter'>
+             <div class="benefit">
               <h3>
-                <i class="ph-fill ph-tree-structure"></i> Seamless Integration
+                <i class="ph-fill ph-baby-carriage"></i> Baby Sitting
               </h3>
               <p>
-                Byteforge supports firms in applying security controls necessary
-                for compliance with regulatory standards and laws like CPRA,
-                GDPR, PCI DSS, and SOC 2.
+                Babysitting isn't just about watching the kids; it's about joining them in their world of wonder and discovery.
               </p>
             </div>
+          </Link>
+           
+
+          <Link href='/services/salon'>
+            <div class="benefit">
+              <h3>
+                <i class="ph-fill ph-hair-dryer"></i> Salon
+              </h3>
+              <p>
+               Transforming hair one snip at a time, because beauty begins the moment you decide to be yourself.
+              </p>
+            </div>
+            </Link>
+
+            
+
+          
           </div>
         </div>
       </div>
