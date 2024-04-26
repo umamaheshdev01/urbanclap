@@ -25,7 +25,7 @@ function page() {
        <Link href='/services/carpenter'><button>Book Now</button></Link>   
         </div>
         <div className="hero-img">
-          <img style={{borderRadius : '10%'}} src="https://xnpbgshwasrramtvbzgx.supabase.co/storage/v1/object/public/servicepics/se.jpg" alt="" />
+          <img style={{borderRadius : '13%' , height:'24rem'}} src="https://xnpbgshwasrramtvbzgx.supabase.co/storage/v1/object/public/servicepics/se.jpg" alt="" />
         </div>
       </div>
       </section>
