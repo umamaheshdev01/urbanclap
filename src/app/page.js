@@ -155,7 +155,7 @@ function page() {
                 <i class="ph-fill ph-car"></i> Car wash
               </h3>
               <p>
-                Want your ride to sparkle like new? Our professional car wash service is here to make it happen! Drop by or book your appointment now for that showroom shine! 
+                Want your ride to sparkle like new? Our professional car wash service is here to make it happen! 
               </p>
             </div>
             </Link>
