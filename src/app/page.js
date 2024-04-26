@@ -59,7 +59,7 @@ function page() {
          <Link href='/services/carpenter'><button>Explore</button></Link>   
         </div>
         <div class="col">
-          <img style={{ borderRadius : '5%' }} src="https://xnpbgshwasrramtvbzgx.supabase.co/storage/v1/object/public/servicepics/new.jpg?t=2024-04-26T17%3A27%3A54.708Z" alt="" />
+          <img style={{ borderRadius : '5%' }} src='https://xnpbgshwasrramtvbzgx.supabase.co/storage/v1/object/public/servicepics/1234567.jpg' alt="" />
         </div>
       </div>
     </section>
