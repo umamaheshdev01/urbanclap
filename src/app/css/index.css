@@ -2,6 +2,10 @@ section.hero {
   height: 120vh;
 }
 
+.alexa{
+  width: 90%;
+}
+
 .hero .container {
   height: 100%;
   background: linear-gradient(
@@ -267,6 +271,11 @@ section.cta-1 .container {
 }
 
 @media (max-width: 900px) {
+
+  .alexa{
+    width: 90%;
+  }
+
   .hero-copy p {
     width: 75%;
   }

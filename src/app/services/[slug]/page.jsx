@@ -81,6 +81,7 @@ function Page({params}) {
          list2.forEach((ele)=>{
             
           list4.push({
+            id : ele.id,
             imageUrl: ele.servicepicture,
     altText: capitalizeFirstLetter(ele.servicename),
     category: capitalizeFirstLetter(ele.Servicetype.name),

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const BlogComponent = ({ blogs }) => {
@@ -7,9 +8,11 @@ const BlogComponent = ({ blogs }) => {
     rows.push(
       <div className="blog-row" key={i}>
         {rowBlogs.map((blog, index) => (
+
+         
           <div className="blog" key={index}>
             <div className="blog-img">
-              <img src={blog.imageUrl} alt={blog.altText} />
+            <Link href={`/service/${blog.id}`}><img src={blog.imageUrl} alt={blog.altText} /></Link>  
               <div className="tag">
                 <p>{blog.category}</p>
               </div>
@@ -21,6 +24,9 @@ const BlogComponent = ({ blogs }) => {
               </h2>
             </div>
           </div>
+         
+
+
         ))}
       </div>
     );
