@@ -196,44 +196,38 @@ function page() {
       <div class="container">
         <div class="center">
           <h2>
-            Developer-centric <br />
-            workflow
+            Top 
+            Services
           </h2>
           <p class="copy">
-            Develop your monitoring tools locally, validate them through CI
-            previews, and implement them in your live environment.
+           
           </p>
         </div>
 
         <div class="flows">
           <div class="flow">
             <div class="flow-copy">
-              <h3>Validate & Execute</h3>
+              <h3>Tap Replacement</h3>
               <p>
-                Byteforge Functions enable the execution of logic and processes,
-                handling tasks on entirely encrypted data through the use of
-                secure serverless functions available in Node.js or Python.
+                Single knob/ inlet old tap replacement with new one (provided by customer)
+
+Procurement of tap, spare parts (at extra cost)
               </p>
             </div>
             <div class="flow-img">
-              <img
-                src="https://assets.website-files.com/64b936c88eb5ddace1f89459/64b9d2f8ea0a30cccb029ecf_code-cages.png"
-                alt=""
+              <img style={{height : '18rem' , borderRadius : '5%'}}
+                src='https://xnpbgshwasrramtvbzgx.supabase.co/storage/v1/object/public/servicepics/p7.jpeg.jpg'
               />
             </div>
           </div>
           <div class="flow">
             <div class="flow-copy">
-              <h3>Implement</h3>
-              <p>
-                Implement your comprehensive testing and monitoring systems via
-                the command line, in tandem with your app deployments.
-              </p>
+              <h3>Door Lock Replacement</h3>
+              <p>Replacement of any kind of door lock Procurement of spare parts (at extra cost)</p>
             </div>
             <div class="flow-img">
-              <img
-                src="https://assets.website-files.com/64b936c88eb5ddace1f89459/64b9d05542f7724f06dd1572_code-functions.png"
-                alt=""
+              <img style={{height : '18rem' , borderRadius : '5%'}}
+               src='https://xnpbgshwasrramtvbzgx.supabase.co/storage/v1/object/public/servicepics/door4.jpeg.jpg'
               />
             </div>
           </div>
@@ -241,83 +235,26 @@ function page() {
       </div>
     </section>
 
-    <section class="first-workflow">
-      <div class="container">
-        <div class="center">
-          <h2>Streamlined Setup Process</h2>
-          <p class="copy">
-            Program your monitoring locally, verify your deployments in CI, and
-            keep tabs on your production environment.
-          </p>
-        </div>
-
-        <div class="flow flow-lg">
-          <div class="flow-copy">
-            <h3>Initialization & Cleanup</h3>
-            <p>
-              Securely sign requests, acquire authentication tokens, and execute
-              your scripts before and after performing your API checks.
-            </p>
-            <button><a href="#">Explore Documentation</a></button>
-          </div>
-        </div>
-
-        <div class="flows">
-          <div class="flow flow-sm-img">
-            <div class="flow-copy">
-              <h3>Examine & Confirm</h3>
-              <p>
-                Byteforge Functions enable the execution of logic and workflows
-                on entirely encrypted data through secure serverless functions
-                available in Node.js or Python.
-              </p>
-            </div>
-            <div class="flow-img">
-              <img
-                src="https://assets.website-files.com/64b936c88eb5ddace1f89459/64baf294c81b94329c92fcb0_inboud-outbound.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="flow flow-sm-rev">
-            <div class="flow-copy">
-              <h3>Implement</h3>
-              <p>
-                Implement your comprehensive testing and monitoring system via
-                command line in tandem with your app deployments.
-              </p>
-            </div>
-            <div class="flow-img">
-              <img
-                src="https://assets.website-files.com/64b936c88eb5ddace1f89459/64baf5c1df5796b0a349d5d8_SDKs-icons.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <section class="onebit">
       <div class="container">
         <div class="ob-logo">
           <img
-            src="https://assets.website-files.com/64b936c88eb5ddace1f89459/64baf8e4ce670fe74ce66a16_onebit-color.svg"
-            alt=""
+            src="https://xnpbgshwasrramtvbzgx.supabase.co/storage/v1/object/public/servicepics/logo_processed.jpg"
+            alt="Logo"
           />
         </div>
         <div class="ob-copy">
           <p>
-            "Byteforge played a pivotal role in bolstering our security
-            measures, enabling us to attract and secure contracts with larger
-            entities that prioritize security."
+            "Home is where love resides, memories are created, and dreams are nurtured."
           </p>
-          <button>John Smith | Chief Technology Officer</button>
+          <button>Team | ServiceXpress</button>
         </div>
       </div>
     </section>
 
-    <section class="cta-callout">
+    {/* <section class="cta-callout">
       <div class="container">
         <div class="callout-copy">
           <h2>Secure confidential information</h2>
@@ -328,7 +265,7 @@ function page() {
           <button><a href="./pages/pricing.html">Begin Now</a></button>
         </div>
       </div>
-    </section>
+    </section> */}
 
 
 
