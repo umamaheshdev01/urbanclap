@@ -15,54 +15,28 @@ function page() {
       <div class="container">
         <h2>About us</h2>
         <p>
-          Byteforge is a developer-centric security enterprise offering
-          encryption solutions through APIs, supported by notable investors such
-          as Tiger Capital, Sharp Stone, and IEX Ventures.
+          ServiceXpress is an innovative online platform designed to revolutionize the way individuals access home services. Our platform offers a comprehensive range of services, spanning from plumbing and electrical work to landscaping and home cleaning. At ServiceXpress, we understand the value of time and the importance of convenience. With just a few clicks, users can effortlessly schedule and book a wide array of home services tailored to their specific needs and preferences.
         </p>
 
-        <div class="c-out"><span>Our Genesis</span></div>
+        <div class="c-out"><span>Our Mission</span></div>
         <p>
-          Founded in 2019, Byteforge was born out of the urgent need to address
-          data privacy concerns that businesses encounter. Acknowledging the
-          flawed nature of the internet, our aim is to mitigate the risk of data
-          being compromised in its raw form by simplifying encryption for
-          developers across the globe.
+          Our mission is simple, to revolutionize the home services industry by providing unparalleled convenience, quality, and reliability. We understand that your home is your sanctuary, and you deserve nothing but the best when it comes to taking care of it. That’s why we’ve assembled a team of skilled professionals who are dedicated to exceeding your expectations with every service.
         </p>
 
         <div class="c-out"><span>Our Vision</span></div>
         <p>
-          Byteforge is on a quest to achieve universal web encryption.
-          Statistics reveal a grim reality: less than 75% of organizations have
-          faced a cloud data breach in the last two years, with a significant
-          portion experiencing multiple incidents. In an era where data breaches
-          have become the norm, our mission has never been more critical.
+          Our vision is to create a world where every homeowner can easily access top-notch home services with just a few clicks. We envision a future where scheduling a plumber, booking a cleaner, or hiring a handyman is as simple as ordering takeout or hailing a ride. With technology as our ally and customer satisfaction as our compass, we’re determined to make this vision a reality
         </p>
+
+
 
         <div class="c-out"><span>Our Team</span></div>
         <p>
-          The Byteforge team boasts a diverse array of professionals, including
-          alumni from tech giants like Google, Salesforce, and Oracle, as well
-          as talents from unconventional paths. Regardless of their background,
-          each member is integral in developing superior encryption services for
-          our clientele.
+          Alone, we can do so little; together, we can do so much.
         </p>
 
-        <div class="c-out"><span>Our Workspace</span></div>
-        <p>
-          While Austin, Texas, serves as our hub, Byteforge champions a flexible
-          work culture, offering remote work options to our employees.
-          Nevertheless, we value face-to-face interactions and strive to foster
-          a cohesive company culture through regular office engagements.
-        </p>
-
-        <div class="c-out"><span>Our Backers</span></div>
-        <p>
-          Byteforge is fortunate to have the backing of eminent investors known
-          for their involvement in pioneering, industry-leading ventures. Their
-          belief in our mission is a testament to our potential.
-        </p>
-
-        <div class="about-logos">
+       
+        {/* <div class="about-logos">
           <div class="a-l-row">
             <div class="a-l-logo">
               <img
@@ -91,9 +65,9 @@ function page() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div class="about-quote">
+        {/* <div class="about-quote">
           <p>
             “At Byteforge, we empower organizations to safeguard and control
             access to their resources in an era of remote work. We're at the
@@ -102,19 +76,18 @@ function page() {
           </p>
 
           <div class="c-out"><span>Brad Johnson | Founder & CEO </span></div>
-        </div>
+        </div> */}
       </div>
     </section>
 
     <section class="cta-callout">
       <div class="container">
         <div class="callout-copy">
-          <h2>Secure confidential information</h2>
+          <h2>ServiceXpress</h2>
           <p>
-            Mitigate data breach risks and achieve regulatory compliance
-            effortlessly, bypassing conventional complexities.
+           Connecting you with skilled professionals you can trust.
           </p>
-          <button><a href="./pricing.html">Begin Now</a></button>
+          <button><a href="./pricing.html">Book Now</a></button>
         </div>
       </div>
     </section>
