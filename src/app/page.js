@@ -2,6 +2,7 @@ import React from 'react'
 import './css/index.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Link from 'next/link'
 
 
 function page() {
@@ -17,15 +18,14 @@ function page() {
      <section className="hero puran" >
       <div className="container">
         <div className="hero-copy">
-          <h1>Empower Your Digital  <br />Defense. Now.</h1>
+          <h1>Service At<br /> Your Doorstep</h1>
           <p>
-            Byteforge is a solution designed for businesses aiming to maintain
-            their confidential information securely encrypted at all moments.
+            Unlock the door to endless possibilities with our new service.Let us empower to achieve more, explore more and live more fully.
           </p>
-          <button><a href="#">Get Started</a></button>
+       <Link href='/services/carpenter'><button>Book Now</button></Link>   
         </div>
         <div className="hero-img">
-          <img src="./assets/hero-img.png" alt="" />
+          <img style={{borderRadius : '10%'}} src="https://xnpbgshwasrramtvbzgx.supabase.co/storage/v1/object/public/servicepics/se.jpg" alt="" />
         </div>
       </div>
       </section>
