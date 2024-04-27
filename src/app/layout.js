@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: 'ServiceXpress: On-demand Home Services',
   description: 'ServiceXpress offers fast and reliable home services including plumbing, electrical, and maintenance.',
-  keywords: ['home services', 'on-demand service', 'plumbing', 'electrical', 'maintenance'],
+  keywords: ['home services', 'on-demand service', 'plumbing', 'electrical', 'maintenance','service express','servicexpress','ServiceXpress','serviceXpress','express','serviceexpress','service express'],
   url: 'https://www.servicexpress.co.in',
   sitename: 'ServiceXpress'
 };

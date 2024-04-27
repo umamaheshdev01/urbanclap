@@ -9,6 +9,7 @@ import Link from 'next/link'
 
 
 import { createClient } from '@supabase/supabase-js'
+import Payment from '@/app/components/Payment'
 const supabaseUrl = 'https://xnpbgshwasrramtvbzgx.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhucGJnc2h3YXNycmFtdHZiemd4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTM5Nzk0MjEsImV4cCI6MjAyOTU1NTQyMX0.SLMupGKcXFpA9HXG_xgzLfgDHTqEKNUu77XBbHaNrds'
 const supabase = createClient(supabaseUrl, supabaseKey)
@@ -74,7 +75,7 @@ function page({params}) {
          
           <h2>{data.name}</h2>
 
-          <img style={{borderRadius :"2%"}}
+          <img style={{borderRadius :"2%",height:'22rem'}}
             src={data.img}
             alt={data.name}
           />
@@ -84,7 +85,7 @@ function page({params}) {
               <p>By <i class="ph-fill ph-shield-check"></i> {data.person}</p>
               
       <br></br>
-<Link href='/services/carpenter'><button style={{background:'black',color:'white',position:'relative',left:'-6px',top:'-10px'}}>Book -  ₹ {data.cost}</button></Link>
+<Payment cost={data.cost}></Payment>
 
             </div>
             <div class="tag">
