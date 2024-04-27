@@ -88,6 +88,7 @@ function Page({params}) {
     author: capitalizeFirstLetter(ele.Users.username) ,
     title: capitalizeFirstLetter(ele.servicename),
     link: '/serve',
+    
 
           })
 

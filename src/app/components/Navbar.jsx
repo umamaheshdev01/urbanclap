@@ -1,8 +1,15 @@
+'use client'
 import Link from 'next/link';
-
 import '../css/navbar.css'
+import { useState } from 'react';
+import LoginSignupPopup from './Login';
+import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
+
+  const auth = localStorage.getItem('auth')
+
+  const [toggle,setToggle] = useState(false)
   const navbarLinks = [
     { href: "/", text: "Home" },
     { href: "/about", text: "About Us" },
@@ -11,8 +18,28 @@ const Navbar = () => {
     { href: "/customers", text: "Customers" },
   ];
 
+  const Stop=()=>{
+    setToggle(prev=>!prev)
+  }
+
+  const r = useRouter()
+
+  const logout = ()=>{
+    localStorage.setItem('auth','000')
+    localStorage.setItem('email','0')
+        localStorage.setItem('phone','0')
+        localStorage.setItem('id','0')
+         localStorage.setItem('username','0')
+         localStorage.setItem('address','0')
+
+        r.refresh()
+  
+  }
+
   return (
     <>
+
+   <>{toggle && <LoginSignupPopup stopit={Stop}></LoginSignupPopup>}</> 
      
     <div className="navbar">
       <div className="container">
@@ -34,7 +61,8 @@ const Navbar = () => {
             ))}
             <li>
               <div className="btn">
-                <a href="https://www.youtube.com/@codegrid">Sign Up</a>
+               {auth==='111' || <a onClick={()=>setToggle(prev=>!prev)}>Sign In</a>}
+               {auth==='111' && <a onClick={()=>logout()}>Logout</a>}
               </div>
             </li>
           </ul>

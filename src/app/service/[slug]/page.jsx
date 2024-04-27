@@ -45,7 +45,8 @@ function page({params}) {
     type : capitalizeFirstLetter(dum.Servicetype.name),
     person : capitalizeFirstLetter(dum.Users.username),
     description : dum.description,
-    cost : dum.cost
+    cost : dum.cost,
+    email : dum.Users.email
 
             }
 
@@ -85,7 +86,7 @@ function page({params}) {
               <p>By <i class="ph-fill ph-shield-check"></i> {data.person}</p>
               
       <br></br>
-<Payment cost={data.cost}></Payment>
+<Payment cost={data.cost} k={data}></Payment>
 
             </div>
             <div class="tag">

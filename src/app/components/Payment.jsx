@@ -4,8 +4,15 @@
 'use client'
 import React from 'react'
 
-const Payment = ({cost}) => {
+const Payment = ({cost,k}) => {
+
+    
+
+
     const makePayment = async () => {
+
+         
+
     
         const res = await initializeRazorpay();
         if (!res) {
@@ -20,7 +27,7 @@ const Payment = ({cost}) => {
                 'Content-Type': 'application/json',
             },
              body: JSON.stringify({
-                amount:cost
+                amount:cost*100
              })
          }
         )
@@ -28,17 +35,45 @@ const Payment = ({cost}) => {
           t.json()
         );
 
+        
+
         var options = {
           key: 'rzp_test_8wkQ9ahelJ2qpZ', 
           name: "ServiceXpress",
           currency: 'INR',
           amount: cost * 100,
-          order_id: data.id,
+          order_id: data.data.id,
           description: "Thankyou for your test donation",
           image: "https://manuarora.in/logo.png",
-          handler: function (response) {
+          handler: async function (response) {
+
+            const datapack = {
+
+                customer_name : localStorage.getItem('username'),
+                user_email : localStorage.getItem('email'),
+                service_name : k.name,
+                service_email : k.email,
+                order_id : data.data.id,
+                date : new Date(),
+                expected_time : '2 hours',
+                address : localStorage.getItem('address'),
+                service_person : k.person,
+                price : cost,
+                service_description : k.description
+
+            }
+
+            fetch("/api/verify",
+           {
+             method: "POST",
+             headers: {
+                'Content-Type': 'application/json',
+            },
+             body: JSON.stringify(datapack)
+            }
+        )
   
-            alert("Razorpay Response: "+response.razorpay_payment_id);
+            alert("Order Successful");
    
           },
           prefill: {
